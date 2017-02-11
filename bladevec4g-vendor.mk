@@ -17,5 +17,21 @@
 # Pick up overlay for features that depend on non-open-source files
 DEVICE_PACKAGE_OVERLAYS := vendor/zte/bladevec4g/overlay
 
+PRODUCT_PACKAGES += \
+    libtime_genoff \
+    libTimeService \
+    TimeService \
+    libscale \
+    libmdmdetect \
+    libperipheral_client \
+    libqmiservices \
+    libqmi \
+    libqcci_legacy \
+    libqmi_client_qmux \
+    libqmi_csi \
+    libqmi_cci \
+    libqmi_common_so \
+    libdsi_netctrl
+
 #com.qualcomm.services.location
 $(call inherit-product, vendor/zte/bladevec4g/bladevec4g-vendor-blobs.mk)
